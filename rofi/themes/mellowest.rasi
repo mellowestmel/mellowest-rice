@@ -1,0 +1,199 @@
+/*
+ * mellowest.rasi
+ * Based on mellowest website CSS
+ */
+
+* {
+    font: "Lato 14";
+
+    bg: #000000;
+    panel: #181818;
+    surface: #111111;
+    input-bg: #060606;
+    text: #e8e8e8;
+    muted: #aaaaaa;
+    accent: #e4e78c;
+}
+
+/* Main window */
+
+window {
+    width: 60%;
+    height: 60%;
+
+    location: center;
+
+    background-color: @panel;
+
+    border: 0px;
+    padding: 20px;
+
+    /* No window animation */
+    transition: none;
+}
+
+/* Main layout */
+
+mainbox {
+    orientation: vertical;
+
+    children: [
+        inputbar,
+        message,
+        listview
+    ];
+
+    spacing: 10px;
+
+    background-color: @panel;
+}
+
+/* Search bar */
+
+inputbar {
+    background-color: @input-bg;
+
+    padding: 10px 20px;
+
+    spacing: 10px;
+}
+
+/* Hide the white case-sensitivity rectangle */
+
+case-indicator {
+    enabled: false;
+}
+
+prompt {
+    background-color: transparent;
+    text-color: @accent;
+}
+
+entry {
+    background-color: transparent;
+    text-color: @text;
+
+    placeholder: "Search...";
+    placeholder-color: @muted;
+}
+
+/* Message */
+
+message {
+    background-color: @surface;
+
+    padding: 10px 20px;
+
+    text-color: @text;
+}
+
+textbox {
+    background-color: transparent;
+    text-color: @text;
+}
+
+/* Application list */
+
+listview {
+    background-color: @input-bg;
+
+    columns: 1;
+    lines: 8;
+
+    fixed-height: true;
+    dynamic: false;
+
+    spacing: 0px;
+
+    scrollbar: false;
+}
+
+/* Entries */
+
+element {
+    background-color: @input-bg;
+    text-color: @text;
+
+    padding: 10px 20px;
+
+    spacing: 10px;
+
+    /* Instant state changes */
+    transition: none;
+}
+
+element normal.normal {
+    background-color: @input-bg;
+    text-color: @text;
+}
+
+element alternate.normal {
+    background-color: @input-bg;
+    text-color: @text;
+}
+
+element normal.active {
+    background-color: @input-bg;
+    text-color: @text;
+}
+
+element selected.normal {
+    background-color: #282828;
+    text-color: @accent;
+
+    border: 1px;
+    border-color: @accent;
+}
+
+element selected.active {
+    background-color: #282828;
+    text-color: @accent;
+
+    border: 1px;
+    border-color: @accent;
+}
+
+/* Entry text */
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+
+    vertical-align: 0.5;
+}
+
+/* Icons */
+
+element-icon {
+    background-color: transparent;
+
+    size: 32px;
+}
+
+/* Scrollbar */
+
+scrollbar {
+    background-color: @input-bg;
+
+    handle-color: @accent;
+
+    width: 4px;
+}
+
+/* Urgent entries */
+
+element urgent {
+    background-color: @input-bg;
+    text-color: @accent;
+
+    border: 1px;
+    border-color: @accent;
+}
+
+element selected.urgent {
+    background-color: #282828;
+    text-color: @accent;
+
+    border: 1px;
+    border-color: @accent;
+}

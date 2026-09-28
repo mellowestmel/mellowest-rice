@@ -1,0 +1,8 @@
+local GENERAL_CONSTANTS = _G.GENERAL
+local APPLICATIONS = GENERAL_CONSTANTS.APPLICATIONS
+
+hl.on("hyprland.start", function()
+    hl.exec_cmd(APPLICATIONS.NOTIFICATION_DAEMON)
+    hl.exec_cmd(APPLICATIONS.WALLPAPER)
+    hl.exec_cmd(APPLICATIONS.BAR)
+end)

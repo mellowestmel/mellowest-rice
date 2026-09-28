@@ -1,7 +1,13 @@
+local APPEARANCE_CONSTANTS = _G.APPEARANCE
+
+local CURSOR = APPEARANCE_CONSTANTS.CURSOR
+local GTK = APPEARANCE_CONSTANTS.GTK
+
 hl.config({
     general = {
         border_size = 0,
         gaps_out = 15,
+        gaps_in = 5,
 
         col = {
             inactive_border = "#000",
@@ -48,4 +54,16 @@ hl.config({
         motion_blur = { enabled = false },
         blur = { enabled = false }
     },
+
+    xwayland = {
+        force_zero_scaling = true
+    }
 })
+
+hl.env("GTK_THEME", GTK.THEME)
+
+hl.env("HYPRCURSOR_THEME", CURSOR.THEME)
+hl.env("HYPRCURSOR_SIZE", CURSOR.SIZE)
+
+hl.env("XCURSOR_THEME", CURSOR.THEME)
+hl.env("XCURSOR_SIZE", CURSOR.SIZE)

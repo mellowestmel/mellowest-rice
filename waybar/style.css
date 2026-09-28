@@ -1,0 +1,261 @@
+* {
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+    transition: none;
+    animation: none;
+    border-radius: 0px;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+window#waybar {
+    background-color: rgb(6, 6, 6);
+    color: rgb(232, 232, 232);
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    min-height: 0;
+}
+
+.modules-left > *,
+.modules-center > *,
+.modules-right > * {
+    min-height: 0;
+}
+
+#workspaces {
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+}
+
+#workspaces button {
+    background-color: transparent;
+    background-image: none;
+    color: rgb(232, 232, 232);
+
+    min-width: 0px;
+    min-height: 0px;
+
+    padding: 3px 2px;
+    margin: 0px;
+
+    border: 1px solid transparent;
+    border-radius: 0px;
+
+    transition: none;
+    animation: none;
+}
+
+#workspaces button:hover,
+#workspaces button.active,
+#workspaces button:focus {
+    background-color: rgb(40, 40, 40);
+    color: rgb(228, 231, 140);
+    border-color: rgb(228, 231, 140);
+}
+
+#workspaces button:active {
+    background-color: rgb(17, 17, 17);
+    color: rgb(232, 232, 232);
+    border-color: transparent;
+    outline: none;
+}
+
+#workspaces button.persistent {
+    background-color: transparent;
+    color: rgb(232, 232, 232);
+}
+
+#workspaces button.empty {
+    color: rgb(170, 170, 170);
+}
+
+#taskbar {
+    min-height: 0;
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+    background-image: none;
+}
+
+#taskbar button {
+    background-color: transparent;
+    background-image: none;
+    color: rgb(232, 232, 232);
+
+    min-width: 0px;
+    min-height: 0px;
+
+    padding: 2px 1px;
+    margin: 0px;
+
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+#taskbar button:hover,
+#taskbar button.active {
+    background-color: rgb(40, 40, 40);
+    color: rgb(228, 231, 140);
+    border-color: rgb(228, 231, 140);
+}
+
+#taskbar button:active {
+    background-color: rgb(17, 17, 17);
+}
+
+#battery,
+#clock,
+#tray {
+    background-color: transparent;
+    background-image: none;
+    color: rgb(232, 232, 232);
+
+    min-height: 0;
+    padding: 5px 3px;
+    margin: 0px;
+
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+#clock:hover,
+#battery:hover,
+#tray:hover {
+    background-color: rgb(40, 40, 40);
+    color: rgb(228, 231, 140);
+    border-color: rgb(228, 231, 140);
+}
+
+#clock {
+    color: rgb(232, 232, 232);
+    padding: 6px 3px;
+}
+
+#battery {
+    padding: 5px 3px;
+}
+
+#battery.critical {
+    border-color: rgb(228, 231, 140);
+}
+
+#tray {
+    padding: 4px 2px;
+}
+
+button {
+    background-color: transparent;
+    background-image: none;
+    color: rgb(232, 232, 232);
+
+    min-width: 0px;
+    min-height: 0px;
+
+    padding: 3px 2px;
+    margin: 1px;
+
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+button:hover,
+button:focus {
+    background-color: rgb(40, 40, 40);
+    color: rgb(228, 231, 140);
+    border-color: rgb(228, 231, 140);
+}
+
+button:focus {
+    outline: 1px solid rgb(228, 231, 140);
+    outline-offset: 1px;
+}
+
+button:active {
+    background-color: rgb(17, 17, 17);
+    color: rgb(232, 232, 232);
+    border-color: transparent;
+    outline: none;
+}
+
+tooltip {
+    background-color: rgb(6, 6, 6);
+    color: rgb(232, 232, 232);
+    border: 1px solid rgb(228, 231, 140);
+    border-radius: 0px;
+}
+
+tooltip label {
+    color: rgb(232, 232, 232);
+    padding: 4px;
+}
+
+menu,
+menuitem {
+    background-color: rgb(6, 6, 6);
+    color: rgb(232, 232, 232);
+    border-radius: 0px;
+}
+
+menuitem:hover {
+    background-color: rgb(40, 40, 40);
+    color: rgb(228, 231, 140);
+}
+
+scrollbar {
+    background-color: rgb(6, 6, 6);
+}
+
+scrollbar slider {
+    background-color: rgb(40, 40, 40);
+    border-radius: 0px;
+}
+
+scrollbar slider:hover {
+    background-color: rgb(228, 231, 140);
+}
+
+selection {
+    background-color: rgb(228, 231, 140);
+    color: rgb(6, 6, 6);
+}
+
+calendar {
+    background-color: rgb(6, 6, 6);
+    color: rgb(232, 232, 232);
+    padding: 6px;
+    border: 1px solid rgb(228, 231, 140);
+    border-radius: 0px;
+}
+
+calendar.header {
+    color: rgb(228, 231, 140);
+    font-weight: bold;
+}
+
+calendar.button {
+    color: rgb(232, 232, 232);
+    background-color: rgb(6, 6, 6);
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+calendar.button:hover {
+    background-color: rgb(40, 40, 40);
+    color: rgb(228, 231, 140);
+    border-color: rgb(228, 231, 140);
+}
+
+calendar.highlight {
+    color: rgb(170, 170, 170);
+}
+
+calendar:selected {
+    background-color: rgb(40, 40, 40);
+    color: rgb(228, 231, 140);
+    font-weight: bold;
+}

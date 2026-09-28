@@ -1,0 +1,94 @@
+{
+    "layer": "top",
+    "position": "left",
+
+    "width": 40,
+    "spacing": 0,
+
+    "margin-top": 15,
+    "margin-bottom": 15,
+    "margin-left": 5,
+    "margin-right": 5,
+
+    "modules-left": [
+        "ext/workspaces"
+    ],
+
+    "modules-center": [
+        "wlr/taskbar"
+    ],
+
+    "modules-right": [
+        "tray",
+        "clock",
+        "battery"
+    ],
+
+    "ext/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "scroll-step": 1,
+        "cursor": true
+    },
+
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 16,
+        "spacing": 0,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "activation-mode": "none"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}%",
+        "format-charging": "+{capacity}%",
+        "format-plugged": "+{capacity}%",
+        "format-icons": [
+            "󰁺",
+            "󰁼",
+            "󰁾",
+            "󰂁",
+            "󰁹"
+        ],
+        "tooltip-format": "{time} remaining",
+        "format-time": "{H}h {M}min",
+        "cursor": true
+    },
+
+    "clock": {
+        "format": "{:%H\n%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "weeks-pos": "none",
+            "on-scroll": 1,
+
+            /* Impossible to change color/alpha of this through the CSS */
+            "format": {
+                "months": "<b>{}</b>",
+                "weekdays": "<span alpha='70%'>{}</span>",
+                "today": "<span color='#e4e78c'><u><b>{}</b></u></span>"
+            }
+        },
+
+        "actions": {
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        },
+
+        "cursor": true
+    },
+
+    "tray": {
+        "spacing": 10,
+        "cursor": true
+    }
+}

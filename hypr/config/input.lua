@@ -1,0 +1,1 @@
+-- Uses Hyprland's automatic input detecion
