@@ -14,12 +14,6 @@ window#waybar {
     color: rgb(232, 232, 232);
 }
 
-.modules-left,
-.modules-center,
-.modules-right {
-    min-height: 0;
-}
-
 .modules-left > *,
 .modules-center > *,
 .modules-right > * {
@@ -123,9 +117,31 @@ window#waybar {
     border-radius: 0px;
 }
 
-#clock:hover,
-#battery:hover,
-#tray:hover {
+#tray {
+    background-color: transparent;
+    background-image: none;
+    color: rgb(232, 232, 232);
+
+    min-height: 0;
+    padding: 4px 2px;
+    margin: 0px;
+
+    border: none;
+    border-radius: 0px;
+}
+
+#tray > * {
+    background-color: transparent;
+    color: rgb(232, 232, 232);
+
+    padding: 2px;
+    margin: 0px;
+
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+#tray > *:hover {
     background-color: rgb(40, 40, 40);
     color: rgb(228, 231, 140);
     border-color: rgb(228, 231, 140);

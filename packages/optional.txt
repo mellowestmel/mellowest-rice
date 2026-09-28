@@ -1,0 +1,7 @@
+copyq
+networkmanager
+openssh
+pavucontrol
+thunar
+unzip
+usbutils

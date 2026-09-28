@@ -20,8 +20,8 @@
 
     "modules-right": [
         "tray",
-        "clock",
-        "battery"
+        "battery",
+        "clock"
     ],
 
     "ext/workspaces": {
@@ -45,9 +45,13 @@
             "warning": 30,
             "critical": 15
         },
+
         "format": "{capacity}%",
         "format-charging": "+{capacity}%",
         "format-plugged": "+{capacity}%",
+
+        "format-full": "",
+
         "format-icons": [
             "󰁺",
             "󰁼",
@@ -55,36 +59,32 @@
             "󰂁",
             "󰁹"
         ],
-        "tooltip-format": "{time} remaining",
-        "format-time": "{H}h {M}min",
-        "cursor": true
+
+        "tooltip-format": "{capacity}% — {time} remaining",
+        "tooltip-format-full": "{capacity}% — Fully charged",
+        "tooltip-format-charging": "{capacity}% — {time} until full",
+        "tooltip-format-plugged": "{capacity}% — Plugged in",
+
+        "format-time": "{H}h {M}min"
     },
 
     "clock": {
         "format": "{:%H\n%M}",
+        "cursor": false,
+
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
 
         "calendar": {
-            "mode": "month",
+            "mode": "year",
             "mode-mon-col": 3,
             "weeks-pos": "none",
-            "on-scroll": 1,
 
-            /* Impossible to change color/alpha of this through the CSS */
             "format": {
                 "months": "<b>{}</b>",
                 "weekdays": "<span alpha='70%'>{}</span>",
                 "today": "<span color='#e4e78c'><u><b>{}</b></u></span>"
             }
-        },
-
-        "actions": {
-            "on-click-right": "mode",
-            "on-scroll-up": "shift_up",
-            "on-scroll-down": "shift_down"
-        },
-
-        "cursor": true
+        }
     },
 
     "tray": {

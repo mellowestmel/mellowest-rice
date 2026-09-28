@@ -98,14 +98,14 @@ listview {
     background-color: @input-bg;
 
     columns: 1;
-    lines: 8;
+    lines: 12;
 
     fixed-height: true;
     dynamic: false;
 
     spacing: 0px;
 
-    scrollbar: false;
+    scrollbar: true;
 }
 
 /* Entries */
@@ -114,11 +114,10 @@ element {
     background-color: @input-bg;
     text-color: @text;
 
-    padding: 10px 20px;
+    padding: 5px 20px;
 
     spacing: 10px;
 
-    /* Instant state changes */
     transition: none;
 }
 
@@ -128,12 +127,17 @@ element normal.normal {
 }
 
 element alternate.normal {
-    background-color: @input-bg;
+    background-color: @surface;
     text-color: @text;
 }
 
 element normal.active {
     background-color: @input-bg;
+    text-color: @text;
+}
+
+element alternate.active {
+    background-color: @surface;
     text-color: @text;
 }
 
@@ -175,7 +179,7 @@ element-icon {
 scrollbar {
     background-color: @input-bg;
 
-    handle-color: @accent;
+    handle-color: #ffffff;
 
     width: 4px;
 }

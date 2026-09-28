@@ -1,1 +1,5 @@
--- Uses Hyprland's automatic input detecion
+hl.config({
+    cursor = {
+        no_warps = true,
+    },
+})
