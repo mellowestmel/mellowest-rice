@@ -11,6 +11,8 @@
     "margin-right": 5,
 
     "modules-left": [
+        "pulseaudio",
+        "battery",
         "ext/workspaces"
     ],
 
@@ -20,7 +22,6 @@
 
     "modules-right": [
         "tray",
-        "battery",
         "clock"
     ],
 
@@ -40,30 +41,28 @@
         "activation-mode": "none"
     },
 
+    "pulseaudio": {
+        "format": "VOL.\n{volume}%",
+        "format-muted": "VOL.\n0%",
+        "scroll-step": 5,
+        "on-click": "pavucontrol"
+    },
+
     "battery": {
         "states": {
             "warning": 30,
             "critical": 15
         },
 
-        "format": "{capacity}%",
-        "format-charging": "+{capacity}%",
-        "format-plugged": "+{capacity}%",
+        "format": "BAT.\n{capacity}%",
+        "format-charging": "BAT.\n+{capacity}%",
+        "format-plugged": "BAT.\n+{capacity}%",
 
         "format-full": "",
 
-        "format-icons": [
-            "󰁺",
-            "󰁼",
-            "󰁾",
-            "󰂁",
-            "󰁹"
-        ],
-
-        "tooltip-format": "{capacity}% — {time} remaining",
-        "tooltip-format-full": "{capacity}% — Fully charged",
-        "tooltip-format-charging": "{capacity}% — {time} until full",
-        "tooltip-format-plugged": "{capacity}% — Plugged in",
+        "tooltip-format": "{time} remaining",
+        "tooltip-format-charging": "{time} until full",
+        "tooltip-format-plugged": "Plugged in",
 
         "format-time": "{H}h {M}min"
     },
