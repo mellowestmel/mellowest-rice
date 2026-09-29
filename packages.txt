@@ -6,8 +6,7 @@ egl-wayland
 gvfs
 hypridle
 hyprland
-hyprlock
-kitty
+alacritty
 networkmanager
 noto-fonts-cjk
 noto-fonts-emoji
@@ -16,7 +15,7 @@ pavucontrol
 pipewire-pulse
 rofi
 swaync
-thunar
+yazi
 waybar
 wireplumber
 xdg-desktop-portal-hyprland

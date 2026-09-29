@@ -1,0 +1,63 @@
+#:schema https://yazi-rs.github.io/schemas/theme.json
+
+[mgr]
+cwd = { fg = "#FFFFFF" }
+
+[tabs]
+active = { bg = "#E4E78C", bold = true }
+inactive = { fg = "#E4E78C", bg = "gray" }
+sep_inner = { open = "", close = "" }
+sep_outer = { open = "", close = "" }
+
+[mode]
+normal_main = { fg = "#000000", bg = "#E4E78C", bold = true }
+normal_alt = { fg = "#E4E78C", bg = "gray" }
+
+[which]
+border = { fg = "#E4E78C" }
+
+[confirm]
+border = { fg = "#E4E78C" }
+title = { fg = "#E4E78C" }
+
+[spot]
+border = { fg = "#E4E78C" }
+title = { fg = "#E4E78C" }
+tbl_col = { fg = "#E4E78C" }
+
+[pick]
+border = { fg = "#E4E78C" }
+
+[input]
+border = { fg = "#E4E78C" }
+
+[cmp]
+border = { fg = "#E4E78C" }
+
+[tasks]
+border = { fg = "#E4E78C" }
+
+[help]
+border = { fg = "#E4E78C" }
+
+[filetype]
+rules = [
+    { url = "*/.*/", fg = "#E4E78C", dim = true },
+    { url = "*/", fg = "#E4E78C" }
+]
+
+[icon]
+prepend_conds = [
+    { if = "hidden & dir", text = "", fg = "#727446" },
+    { if = "dir", text = "", fg = "#E4E78C" }
+]
+
+[status]
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+
+[indicator]
+current = { fg = "#000000", bg = "#E4E78C" }
+parent = { fg = "#000000", bg = "#E4E78C" }
+preview = { fg = "#000000", bg = "#E4E78C" }
+padding = { open = " ", close = " " }

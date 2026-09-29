@@ -5,14 +5,20 @@ _G.GENERAL = {
 
     APPLICATIONS = {
         APPLICATION_LAUNCHER = "rofi -show drun",
-        TERMINAL = "kitty",
+        FILE_MANAGER = "alacritty -e yazi",
+
+        TERMINAL = "alacritty",
 
         NOTIFICATION_DAEMON = "swaync",
+        
         WALLPAPER = "neowall",
-
         BAR = "waybar",
 
         BROWSER = "zen-browser"
+    },
+
+    WINDOW_CLASSES = {
+        VOLUME_CONTROL = "org.pulseaudio.pavucontrol",
     },
 }
 
@@ -41,6 +47,7 @@ _G.KEYBINDS.BINDS = {
     CLOSE_WINDOW = _G.KEYBINDS.MAIN_MOD .. " + C",
     FULLSCREEN_WINDOW = "F11",
     FLOAT_WINDOW = _G.KEYBINDS.MAIN_MOD .. " + SPACE",
+    MOVE_WINDOW = _G.KEYBINDS.MAIN_MOD .. " + mouse:272",
 
     --// FOCUS
     FOCUS_LEFT = _G.KEYBINDS.MAIN_MOD .. " + Left",

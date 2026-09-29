@@ -5,12 +5,20 @@ local BINDS = KEYBINDS_CONSTANTS.BINDS
 
 --// Helpers
 local function _bindAction(bind, dispatcher)
+    local dispatcherFunction = dispatcher
+
+    if type(dispatcher) ~= "function" then
+        dispatcherFunction = function()
+            hl.dispatch(dispatcher)
+        end
+    end
+
     if type(bind) == "table" then
         for _, keybind in ipairs(bind) do
-            hl.bind(keybind, dispatcher)
+            hl.bind(keybind, dispatcherFunction)
         end
     else
-        hl.bind(bind, dispatcher)
+        hl.bind(bind, dispatcherFunction)
     end
 end
 
@@ -42,6 +50,7 @@ _bindAction(BINDS.OPEN_BROWSER, hl.dsp.exec_cmd(GENERAL_CONSTANTS.APPLICATIONS.B
 _bindAction(BINDS.CLOSE_WINDOW, hl.dsp.window.close())
 _bindAction(BINDS.FULLSCREEN_WINDOW, hl.dsp.window.fullscreen())
 _bindAction(BINDS.FLOAT_WINDOW, hl.dsp.window.float({ action = "toggle" }))
+_bindAction(BINDS.MOVE_WINDOW, hl.dsp.window.drag())
 
 --// Focus
 _bindAction(BINDS.FOCUS_LEFT, hl.dsp.focus({ direction = "left" }))
@@ -56,6 +65,3 @@ _bindAction(BINDS.WORKSPACE_DOWN, _changeWorkspace(1, false))
 --// Move Windows to Workspaces
 _bindAction(BINDS.MOVE_WINDOW_WORKSPACE_UP, _changeWorkspace(-1, true))
 _bindAction(BINDS.MOVE_WINDOW_WORKSPACE_DOWN, _changeWorkspace(1, true))
-
---// Testing
-_bindAction("SUPER + Q", hl.dsp.exec_cmd("killall waybar && waybar &"))
