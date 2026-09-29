@@ -19,3 +19,5 @@ yazi
 waybar
 wireplumber
 xdg-desktop-portal-hyprland
+slurp
+vlc

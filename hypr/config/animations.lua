@@ -57,3 +57,8 @@ hl.animation({
     bezier = "easeOut",
     style = "slidevert"
 })
+
+hl.animation({
+    leaf = "monitorAdded",
+    enabled = false,
+})

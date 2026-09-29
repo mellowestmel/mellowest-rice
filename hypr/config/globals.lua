@@ -14,7 +14,7 @@ _G.GENERAL = {
         WALLPAPER = "neowall",
         BAR = "waybar",
 
-        BROWSER = "zen-browser"
+        BROWSER = "zen-browser",
     },
 
     WINDOW_CLASSES = {
