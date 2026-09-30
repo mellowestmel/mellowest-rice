@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export XDG_DATA_DIRS:/var/lib/flatpak/exports/share\x1e/usr/local/share\x1e/usr/share
 SETUVAR __done_min_cmd_duration:10000
 SETUVAR __done_notification_urgency_level:low
 SETUVAR pure_begin_prompt_with_current_directory:true

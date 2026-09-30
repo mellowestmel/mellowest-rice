@@ -14,7 +14,7 @@ papirus-icon-theme
 pavucontrol
 pipewire-pulse
 rofi
-swaync
+mako
 yazi
 waybar
 wireplumber

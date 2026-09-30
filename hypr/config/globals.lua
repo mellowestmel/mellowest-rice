@@ -76,3 +76,6 @@ _G.KEYBINDS.BINDS = {
         _G.KEYBINDS.MAIN_MOD .. " + SHIFT + S",
     },
 }
+
+--// Make Rofi see flatpaks
+hl.env("XDG_DATA_DIRS", "~/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share")
