@@ -1,16 +1,17 @@
 bibata-cursor-theme-bin
 bluez
 bluez-utils
-copyq
+wl-clipboard
 egl-wayland
 gvfs
 hypridle
 hyprland
 alacritty
 networkmanager
+noto-fonts
+noto-fonts-extra
 noto-fonts-cjk
 noto-fonts-emoji
-papirus-icon-theme
 pavucontrol
 pipewire-pulse
 rofi
@@ -21,3 +22,4 @@ wireplumber
 xdg-desktop-portal-hyprland
 slurp
 vlc
+grim
