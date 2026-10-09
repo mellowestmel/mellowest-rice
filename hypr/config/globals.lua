@@ -14,6 +14,9 @@ _G.GENERAL = {
         WALLPAPER = "neowall",
         BAR = "waybar",
 
+        FULL_SCREENSHOT = "sh -c '$HOME/.local/share/scripts/screenshot.sh full'",
+        SCREENSHOT = "sh -c '$HOME/.local/share/scripts/screenshot.sh area'",
+
         BROWSER = "zen-browser",
     },
 
@@ -40,8 +43,13 @@ _G.KEYBINDS = {
 _G.KEYBINDS.BINDS = {
     --// APPLICATIONS
     OPEN_APPLICATION_LAUNCHER = _G.KEYBINDS.MAIN_MOD .. " + R",
+    OPEN_FILE_MANAGER = _G.KEYBINDS.MAIN_MOD .. " + F",
     OPEN_TERMINAL = _G.KEYBINDS.MAIN_MOD .. " + T",
     OPEN_BROWSER = _G.KEYBINDS.MAIN_MOD .. " + B",
+
+    --// SCREENSHOT
+    FULL_SCREENSHOT = "Print",
+    SCREENSHOT = _G.KEYBINDS.MAIN_MOD .. "+ Q",
 
     --// WINDOW MANAGEMENT
     CLOSE_WINDOW = _G.KEYBINDS.MAIN_MOD .. " + C",

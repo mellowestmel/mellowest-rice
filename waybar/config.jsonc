@@ -71,6 +71,8 @@
         "format": "{:%H\n%M}",
         "cursor": false,
 
+        "locale": "en_US.UTF-8", /* Change if you want non-english dates */
+
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
 
         "calendar": {

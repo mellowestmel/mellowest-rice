@@ -18,3 +18,5 @@ This rice uses Hyprland as its compositor.
 
 ## Notes
 This rice is a work in progress, so configuration and installation instructions may change in the future.
+
+In `waybar/config.jsonc` change the clock module's locale property if you want the calendar to display dates in a different language. Had to manually set it because it kept switching back to Polish after updates.
