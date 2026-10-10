@@ -1,2 +1,12 @@
 [mgr]
 show_hidden = true
+
+[opener]
+krita = [
+    { run = 'krita %s', orphan = true, desc = "Krita" },
+]
+
+[open]
+prepend_rules = [
+    { url = "*.kra", use = "krita" },
+]
