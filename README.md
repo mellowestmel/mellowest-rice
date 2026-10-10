@@ -18,4 +18,8 @@ This rice uses Hyprland as its compositor.
 - `scripts/` → `~/.local/share/scripts/`
 
 ## Notes
+You will have to change monitor names in the following files:
+`waybar/config.jsonc` change "output"
+`hypr/hyprlock.conf` change $main_monitor
+
 This rice is a work in progress, so configuration and installation instructions may change in the future.

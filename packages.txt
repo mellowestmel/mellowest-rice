@@ -24,3 +24,4 @@ slurp
 vlc
 grim
 neowall-bin
+hyprlock

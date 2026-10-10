@@ -22,21 +22,28 @@ local function _bindAction(bind, dispatcher)
     end
 end
 
+--// Workspace navigation
 local function _changeWorkspace(steps, moveWindow)
     return function()
         local workspace = hl.get_active_workspace()
         if not workspace then return end
 
         local target = workspace.id + steps
+
         target = math.max(
             math.min(target, GENERAL_CONSTANTS.WORKSPACE_AMOUNT),
             1
         )
 
         if moveWindow then
-            hl.dispatch(hl.dsp.window.move({ workspace = target }))
+            hl.dispatch(hl.dsp.window.move({
+                workspace = target
+            }))
         else
-            hl.dispatch(hl.dsp.focus({ workspace = target }))
+            hl.dispatch(hl.dsp.focus({
+                workspace = target,
+                on_current_monitor = true
+            }))
         end
     end
 end

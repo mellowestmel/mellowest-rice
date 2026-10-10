@@ -71,22 +71,18 @@ _G.KEYBINDS.BINDS = {
 
     --// WORKSPACES
     WORKSPACE_UP = {
-        _G.KEYBINDS.MAIN_MOD .. " + Up",
         _G.KEYBINDS.MAIN_MOD .. " + W",
     },
 
     WORKSPACE_DOWN = {
-        _G.KEYBINDS.MAIN_MOD .. " + Down",
         _G.KEYBINDS.MAIN_MOD .. " + S",
     },
 
     MOVE_WINDOW_WORKSPACE_UP = {
-        _G.KEYBINDS.MAIN_MOD .. " + SHIFT + Up",
         _G.KEYBINDS.MAIN_MOD .. " + SHIFT + W",
     },
 
     MOVE_WINDOW_WORKSPACE_DOWN = {
-        _G.KEYBINDS.MAIN_MOD .. " + SHIFT + Down",
         _G.KEYBINDS.MAIN_MOD .. " + SHIFT + S",
     },
 }

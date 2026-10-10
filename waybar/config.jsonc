@@ -1,4 +1,5 @@
 {
+    "output": "HDMI-A-1", /* Change to your monitor name */
     "layer": "top",
     "position": "left",
 
