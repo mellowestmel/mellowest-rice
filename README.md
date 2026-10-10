@@ -10,13 +10,12 @@ This rice uses Hyprland as its compositor.
 2. Install the appropriate drivers for your hardware, especially your GPU.
 3. Install all packages listed in [`packages.txt`](packages.txt).
 4. Clone this repository and symlink the configuration files to their respective locations (recommended), or copy them manually.
-5. Symlink or copy `color-schemes/` and `fonts/` to the destination directories listed below.
+5. Symlink or copy `color-schemes/`, `fonts/` and `scripts/` to the destination directories listed below.
 
 ## Directory mappings
 - `color-schemes/` → `~/.local/share/color-schemes/`
 - `fonts/` → `~/.local/share/fonts/`
+- `scripts/` → `~/.local/share/scripts/`
 
 ## Notes
 This rice is a work in progress, so configuration and installation instructions may change in the future.
-
-In `waybar/config.jsonc` change the clock module's locale property if you want the calendar to display dates in a different language. Had to manually set it because it kept switching back to Polish after updates.

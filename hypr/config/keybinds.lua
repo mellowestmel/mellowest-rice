@@ -51,6 +51,10 @@ _bindAction(BINDS.OPEN_BROWSER, hl.dsp.exec_cmd(GENERAL_CONSTANTS.APPLICATIONS.B
 _bindAction(BINDS.FULL_SCREENSHOT, hl.dsp.exec_cmd(GENERAL_CONSTANTS.APPLICATIONS.FULL_SCREENSHOT))
 _bindAction(BINDS.SCREENSHOT, hl.dsp.exec_cmd(GENERAL_CONSTANTS.APPLICATIONS.SCREENSHOT))
 
+--// Security
+_bindAction(BINDS.QUICK_SHUTDOWN, hl.dsp.exec_cmd("shutdown now"))
+_bindAction(BINDS.LOCK, hl.dsp.exec_cmd(GENERAL_CONSTANTS.APPLICATIONS.LOCKSCREEN_MANAGER))
+
 --// Window management
 _bindAction(BINDS.CLOSE_WINDOW, hl.dsp.window.close())
 _bindAction(BINDS.FULLSCREEN_WINDOW, hl.dsp.window.fullscreen())

@@ -9,7 +9,9 @@ _G.GENERAL = {
 
         TERMINAL = "alacritty",
 
-        NOTIFICATION_DAEMON = "swaync",
+        POLKIT_AUTH_AGENT = "hyprpolkitagent",
+        LOCKSCREEN_MANAGER = "hyprlock",
+        NOTIFICATION_DAEMON = "mako",
         
         WALLPAPER = "neowall",
         BAR = "waybar",
@@ -49,7 +51,11 @@ _G.KEYBINDS.BINDS = {
 
     --// SCREENSHOT
     FULL_SCREENSHOT = "Print",
-    SCREENSHOT = _G.KEYBINDS.MAIN_MOD .. "+ Q",
+    SCREENSHOT = _G.KEYBINDS.MAIN_MOD .. " + SHIFT + X",
+
+    --// SECURITY
+    QUICK_SHUTDOWN = _G.KEYBINDS.MAIN_MOD .. "+ SHIFT + Q",
+    LOCK = _G.KEYBINDS.MAIN_MOD .. "+ L",
 
     --// WINDOW MANAGEMENT
     CLOSE_WINDOW = _G.KEYBINDS.MAIN_MOD .. " + C",

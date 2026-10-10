@@ -23,3 +23,5 @@ xdg-desktop-portal-hyprland
 slurp
 vlc
 grim
+neowall-bin
+hyprpolkitagent
