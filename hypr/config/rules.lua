@@ -1,4 +1,15 @@
+local MONITOR_CONSTANTS = _G.MONITOR
 local GENERAL_CONSTANTS = _G.GENERAL
+
+-- Workspaces 1–9 belong to the main monitor.
+for index = 1, 9 do
+    hl.workspace_rule({
+        workspace = tostring(index),
+        monitor = MONITOR_CONSTANTS.MAIN_MONITOR,
+        persistent = true,
+        default = (index == 1),
+    })
+end
 
 --// Dialogs
 hl.window_rule({

@@ -27,6 +27,10 @@ _G.GENERAL = {
     },
 }
 
+_G.MONITOR = {
+    MAIN_MONITOR = "HDMI-A-1"
+}
+
 _G.APPEARANCE = {
     GTK = {
         THEME = "Adwaita:dark"

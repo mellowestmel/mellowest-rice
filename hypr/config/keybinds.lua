@@ -1,4 +1,5 @@
 local KEYBINDS_CONSTANTS = _G.KEYBINDS
+local MONITOR_CONSTANTS = _G.MONITOR
 local GENERAL_CONSTANTS = _G.GENERAL
 
 local BINDS = KEYBINDS_CONSTANTS.BINDS
@@ -25,13 +26,22 @@ end
 --// Workspace navigation
 local function _changeWorkspace(steps, moveWindow)
     return function()
+        local monitor = hl.get_active_monitor()
+        if not monitor then return end
+
+        -- Only the primary monitor supports workspace navigation.
+        if monitor.name ~= MONITOR_CONSTANTS.MAIN_MONITOR then
+            return
+        end
+
         local workspace = hl.get_active_workspace()
         if not workspace then return end
 
-        local target = workspace.id + steps
-
-        target = math.max(
-            math.min(target, GENERAL_CONSTANTS.WORKSPACE_AMOUNT),
+        local target = math.max(
+            math.min(
+                workspace.id + steps,
+                9
+            ),
             1
         )
 
