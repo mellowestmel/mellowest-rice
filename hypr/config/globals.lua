@@ -9,7 +9,7 @@ _G.GENERAL = {
 
         TERMINAL = "alacritty",
 
-        POLKIT_AUTH_AGENT = "hyprpolkitagent",
+        POLKIT_AUTH_AGENT = "echo", --temp
         LOCKSCREEN_MANAGER = "hyprlock",
         NOTIFICATION_DAEMON = "mako",
         
