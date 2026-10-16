@@ -80,16 +80,18 @@ entry {
 /* Message */
 
 message {
-    background-color: @surface;
+    background-color: @input-bg;
+    text-color: @text;
 
     padding: 10px 20px;
-
-    text-color: @text;
+    border: 0px;
 }
 
 textbox {
-    background-color: transparent;
+    background-color: @input-bg;
     text-color: @text;
+
+    highlight: bold;
 }
 
 /* Application list */
